@@ -24,7 +24,7 @@ function addMovieJson() {
       const voteCount = movie.vote_count;
       const overview = movie.overview;
 
-      movieListHTML += `<div align=left ><li><strong>${title}</strong> (released ${releaseDate})<br>Vote Count - ${voteCount}<br>Overview: ${overview}</li></div><br><br>`;
+      movieListHTML += `<div align=left ><li><strong>${title}</strong> (released ${releaseDate})<br><span style="color:#c73333">Vote Count - ${voteCount}</span><br>Overview: ${overview}</li></div><br><br>`;
     }
       movieListHTML += "</ol>";
       output.innerHTML = movieListHTML;
@@ -46,7 +46,7 @@ function addTvShowJson() {
       const voteCount = show.vote_count;
       const overview = show.overview;
 
-      tvShows += `<div align=left ><li><strong>${name}</strong> (first aired ${aired})<br>Vote Count - ${voteCount}<br>Overview: ${overview}</li></div><br><br>`;
+      tvShows += `<div align=left ><li><strong>${name}</strong> (first aired ${aired})<br><span style="color:#c73333">Vote Count - ${voteCount}</span><br>Overview: ${overview}</li></div><br><br>`;
     }
       tvShows += "</ol>";
       output.innerHTML = tvShows;
@@ -69,7 +69,9 @@ function addTvShowJson() {
           const overview = trend.overview;
           trendingThisWeek += `
           <div align=left ><li><strong>${name}</strong> (released ${releaseDate})<br>
+          <span style="color:#c73333">
           Vote Count - ${voteCount}<br>
+          </span>
           Overview: ${overview}</li></div><br><br>`;
         }
         trendingThisWeek += "</ol>";
@@ -88,7 +90,9 @@ function addTvShowJson() {
           const overview = trends.overview;
           trendingThisWeek1 += `
           <div align=left ><li><strong>${name2}</strong> (first aired ${aired})<br>
+          <span style="color:#c73333">
           Vote Count - ${voteCount}<br>
+          </span>
           Overview: ${overview}</li></div><br><br>`;
         }
         trendingThisWeek1 += "</ol>";
