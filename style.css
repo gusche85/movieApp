@@ -2,12 +2,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
   text-align: center;
+  color: whitesmoke;
   margin-left: 50px;
   margin-right: 50px;
+  background-image: url(background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
 }
 
 button {
-  background-color: #221f84;
+  background-color: #b80000;
   color: white;
   padding: 5px;
   font-size: 16px;
